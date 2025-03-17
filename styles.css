@@ -18,6 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
+  overflow: auto;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 .topbar {
-  background-color: white;
+  background-color: black;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
@@ -59,19 +60,12 @@ body {
 }
 
 .topbaricon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.main {
-  background-color: rgb(238, 238, 238);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  height: 1.75rem;
+  width: 1.75rem;
 }
 
 .searchbar {
   grid-column: 1 / 2;
-  background-color: blue;
   display: grid;
   grid-template-columns: minmax(1.5rem, 1.5rem) 1fr;
   padding: 1rem;
@@ -84,13 +78,15 @@ input[type="text"] {
   border: 0;
   border-radius: 30px;
   padding: 7px;
-  font-size: 1em;
+  font-size: 0.85em;
   background-color: rgb(238, 238, 238);
 }
 
 .alarm {
   grid-column: 2 / 3;
-  background-color: aqua;
+  align-self: center;
+  justify-self: end;
+  padding: 1rem;
 }
 
 .usernameiconsmall {
@@ -116,4 +112,10 @@ input[type="text"] {
 .share {
   grid-column: 4 / 5;
   background-color: purple;
+}
+
+.main {
+  background-color: rgb(238, 238, 238);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
