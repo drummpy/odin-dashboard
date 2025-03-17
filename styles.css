@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-  background-color: blue;
+  background-color: #134074;
   color: white;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -49,13 +49,51 @@ body {
 }
 
 .topbar {
-  background-color: aqua;
+  background-color: white;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .main {
-  background-color: blueviolet;
+  background-color: rgb(238, 238, 238);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.searchbar {
+  grid-column: 1 / 2;
+  background-color: blue;
+}
+
+.alarm {
+  grid-column: 2 / 3;
+  background-color: aqua;
+}
+
+.usernameiconsmall {
+  grid-column: 3 / 5;
+  background-color: green;
+}
+
+.usernameiconlarge {
+  grid-column: 1 / 2;
+  background-color: yellow;
+}
+
+.new {
+  grid-column: 2 / 3;
+  background-color: pink;
+}
+
+.upload {
+  grid-column: 3 / 4;
+  background-color: brown;
+}
+
+.share {
+  grid-column: 4 / 5;
+  background-color: purple;
 }
