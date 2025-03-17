@@ -40,6 +40,7 @@ body {
   gap: 1.5rem;
   font-size: 1.25rem;
   font-weight: 600;
+  min-width: 230px;
 }
 
 .navbaricon {
@@ -57,6 +58,11 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
+.topbaricon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .main {
   background-color: rgb(238, 238, 238);
   grid-column: 2 / 3;
@@ -66,6 +72,20 @@ body {
 .searchbar {
   grid-column: 1 / 2;
   background-color: blue;
+  display: grid;
+  grid-template-columns: minmax(1.5rem, 1.5rem) 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 95%;
+  border: 0;
+  border-radius: 30px;
+  padding: 7px;
+  font-size: 1em;
+  background-color: rgb(238, 238, 238);
 }
 
 .alarm {
