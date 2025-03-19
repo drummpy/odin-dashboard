@@ -7,6 +7,11 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+p,
+h2 {
+  margin: 0.25rem;
+}
+
 .navbar h1 {
   font-weight: 800;
   font-size: 2rem;
@@ -32,6 +37,8 @@ body {
   grid-template-rows: auto auto auto 100%;
   gap: 4rem;
   padding: 1rem;
+  position: relative;
+  z-index: 3;
 }
 
 .navbarblock {
@@ -54,8 +61,11 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 1fr;
+  box-shadow: -1px 8px 15px 0px #d6d6d6;
+  position: relative;
+  z-index: 2;
 }
 
 .topbaricon {
@@ -67,7 +77,7 @@ body {
   grid-column: 1 / 2;
   display: grid;
   grid-template-columns: minmax(1.5rem, 1.5rem) 1fr;
-  padding: 1rem;
+  padding: 0 2rem 0;
   gap: 1rem;
   align-items: center;
 }
@@ -85,36 +95,85 @@ input[type="text"] {
   grid-column: 2 / 3;
   align-self: center;
   justify-self: end;
-  padding: 1rem;
+  padding: 0 1rem 0;
 }
 
 .usernameiconsmall {
   grid-column: 3 / 5;
-  background-color: green;
+  display: grid;
+  grid-template-columns: minmax(1.5rem, 2.5rem) 1fr;
+  padding: 0 1rem 0;
+  align-items: center;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.usericonsmall {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
 }
 
 .usernameiconlarge {
   grid-column: 1 / 2;
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: minmax(3rem, 4rem) 1fr;
+  padding: 0 2rem 1rem;
+  align-items: center;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.usernameiconlarge h2 {
+  font-size: 1.35rem;
+}
+
+.usericonlarge {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
 }
 
 .new {
   grid-column: 2 / 3;
-  background-color: pink;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: end;
 }
 
 .upload {
   grid-column: 3 / 4;
-  background-color: brown;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
 }
 
 .share {
   grid-column: 4 / 5;
-  background-color: purple;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: start;
+}
+
+button {
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: #134074;
+  color: #ffff;
+  border: none;
+  border-radius: 30px;
+  padding: 1em;
+  max-width: 9em;
+  min-width: 9em;
 }
 
 .main {
   background-color: rgb(238, 238, 238);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  position: relative;
+  z-index: 1;
 }
