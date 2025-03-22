@@ -205,7 +205,8 @@ button {
 }
 
 .maincard,
-.sidecard {
+.announcements,
+.trending {
   background-color: #ffff;
   border-radius: 6px;
   position: relative;
@@ -217,16 +218,25 @@ button {
   border-left: 6px solid #faa916;
   padding: 1rem;
   display: grid;
-  grid-template-rows: 0.5fr 5fr 0.5r;
+}
+
+.maincardtitle {
+  max-height: 1.5rem;
+  align-items: end;
+}
+
+.maincardcontent {
+  align-items: start;
 }
 
 .maincard h4 {
-  margin: 0.5rem 0 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .maincard p {
   margin: 0;
   font-size: 0.85rem;
+  color: gray;
 }
 
 .maincardiconbar {
@@ -234,8 +244,29 @@ button {
   gap: 1rem;
   padding-top: 0.5rem;
   grid-template-columns: 10fr 1fr 1fr 1fr;
+  align-items: end;
 }
 
-.sidecard {
+.announcements {
   overflow: hidden;
+  font-size: 0.85rem;
+  color: gray;
+  padding: 1.25rem;
+}
+
+.announcements b {
+  color: black;
+}
+
+.announcements p {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 0;
 }
