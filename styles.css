@@ -270,3 +270,21 @@ hr {
   margin: 1rem 0;
   padding: 0;
 }
+
+.trending {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 4fr;
+  color: gray;
+  font-size: 0.85rem;
+  column-gap: 0.5rem;
+}
+
+.trending b {
+  color: black;
+}
+
+.userinfo,
+.usericon {
+  align-content: center;
+}
